@@ -5,6 +5,15 @@ COTR establishes correspondence in a functional and end-to-end fashion. It solve
 
 [[arXiv]](https://arxiv.org/abs/2103.14167), [[video]](https://jiangwei221.github.io/vids/cotr/README.html), [[presentation]](https://youtu.be/bOZ12kgfn3E), [[pretrained_weights]](https://www.cs.ubc.ca/research/kmyi_data/files/2021/cotr/default.zip), [[distance_matrix]](https://www.cs.ubc.ca/research/kmyi_data/files/2021/cotr/MegaDepth_v1.zip)
 
+## Run it on 4090Ti
+1. made conda env with python3.10 with environment.yml that has only torch related pkgs.
+2. run demo and pip installed the missing pkgs.
+3. removed torch pkgs installed by conda and install all of them with pip (wheel). 
+```
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+```
+
+
 ##  Training
 
 ### 1. Prepare data

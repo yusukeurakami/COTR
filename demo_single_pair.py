@@ -29,8 +29,8 @@ def main(opt):
     utils.safe_load_weights(model, weights)
     model = model.eval()
 
-    img_a = imageio.imread('./sample_data/imgs/cathedral_1.jpg', pilmode='RGB')
-    img_b = imageio.imread('./sample_data/imgs/cathedral_2.jpg', pilmode='RGB')
+    img_a = imageio.imread('./sample_data/shokunin_imgs/01_plate/00.jpg', pilmode='RGB')
+    img_b = imageio.imread('./sample_data/shokunin_imgs/01_plate/03.jpg', pilmode='RGB')
 
     engine = SparseEngine(model, 32, mode='tile')
     t0 = time.time()
